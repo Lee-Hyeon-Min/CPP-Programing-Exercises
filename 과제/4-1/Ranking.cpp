@@ -4,7 +4,7 @@ static PlayInfo MVP[NUM_MVP];
 static int nMVP = NUM_MVP;
 
 static void initRanking() {
-	PlayInfo noname = { "C++½Ã·¯¿ä", 1000, 1000.0 };
+	PlayInfo noname = { "C++ì‹œëŸ¬ìš”", 1000, 1000.0 };
 	for (int i = 0; i<nMVP; i++)
 		MVP[i] = noname;
 }
@@ -29,7 +29,7 @@ void storeRanking(char* fname) {
 }
 void printRanking() {
 	for (int i = 0; i<nMVP; i++)
-		printf("  [%2dÀ§]  %4d  %-16s %5.1f\n", i + 1, MVP[i].nMove,
+		printf("  [%2dìœ„]  %4d  %-16s %5.1f\n", i + 1, MVP[i].nMove,
 			MVP[i].name, MVP[i].tElapsed);
 }
 int addRanking(int nMove, double tElap) {
@@ -41,8 +41,8 @@ int addRanking(int nMove, double tElap) {
 		}
 		MVP[pos].nMove = nMove;
 		MVP[pos].tElapsed = tElap;
-		printf(" %dÀ§ÀÔ´Ï´Ù. ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä: ", pos + 1);
-		scanf_s("%s", MVP[pos].name);
+		printf(" %dìœ„ìž…ë‹ˆë‹¤. ì´ë¦„ì„ ìž…ë ¥í•˜ì„¸ìš”: ", pos + 1);
+		scanf_s("%s", MVP[pos].name,20);
 		return pos + 1;
 	}
 	return 0;
