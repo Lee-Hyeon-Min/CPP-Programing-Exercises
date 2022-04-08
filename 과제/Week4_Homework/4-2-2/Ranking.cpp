@@ -15,7 +15,7 @@ void loadRanking(char* fname) {
 	else {
 		for (int i = 0; i<nMVP; i++)
 			fscanf_s(fp, "%d%s%lf", &MVP[i].nMove,
-				MVP[i].name, &MVP[i].tElapsed);
+				MVP[i].name,20, &MVP[i].tElapsed);
 		fclose(fp);
 	}
 }
