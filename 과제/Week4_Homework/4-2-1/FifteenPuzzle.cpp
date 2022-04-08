@@ -4,7 +4,7 @@
 #include <conio.h>
 #include <string.h>
 #include <time.h>
-#define DIM	3
+#define DIM	5
 
 enum Direction { Left = 75, Right = 77, Up = 72, Down = 80 };
 static int DirKey[4] = { Left, Right, Up, Down };
