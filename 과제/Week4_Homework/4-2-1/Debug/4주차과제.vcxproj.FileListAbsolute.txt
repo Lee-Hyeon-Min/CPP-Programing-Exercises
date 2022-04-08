@@ -1,0 +1,3 @@
+C:\Users\Lee\Desktop\게임으로배우는CPP_학습자용\소스및프로젝트\04장-배열구조체와파일\04장-4x4PuzzleGame\Debug\4주차 과제.exe
+C:\Users\Lee\Desktop\4주차과제\Debug\4주차 과제.exe
+C:\Users\Lee\Desktop\과제\4-1\Debug\4주차 과제.exe
