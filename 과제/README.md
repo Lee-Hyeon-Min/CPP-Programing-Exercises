@@ -1,4 +1,4 @@
-# This Repository is for my own assignment for Donga-University.
+# This Repository is for my own assignment by Donga-University.
 * ## 4x4 Puzzle Game
 
 [과제4](https://github.com/Lee-Hyeon-Min/CPP-Programing-Exercises/tree/main/%EA%B3%BC%EC%A0%9C/Week4_Homework)
