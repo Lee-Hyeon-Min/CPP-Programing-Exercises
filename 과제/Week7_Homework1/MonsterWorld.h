@@ -2,9 +2,6 @@
 #include "Canvas.h"
 #include "Monster.h"
 #include <windows.h>
-#include <stdio.h>
-#include <string.h>
-#include <conio.h>
 #define DIM 40
 #define MAXMONS 20
 
@@ -31,8 +28,8 @@ class MonsterWorld {
 			mon[i].draw(canvas);
 		canvas.print("[Monster World : Basic]");
 
-		cerr << "ÀüÃ¼ ÀÌµ¿ È½¼ö: " << nMove << endl;
-		cerr << "³²Àº ¾ÆÀÌÅÛ ¼ö: " << countItems() << endl;
+		cerr << "ì „ì²´ ì´ë™ íšŸìˆ˜: " << nMove << endl;
+		cerr << "ë‚¨ì€ ì•„ì´í…œ ìˆ˜: " << countItems() << endl;
 		for (int i = 0; i < nMon; i++)
 			mon[i].print();
 	}
@@ -49,7 +46,7 @@ public:
 	}
 	void play(int maxwalk, int wait) {
 		print();
-		cerr << "¿£ÅÍ¸¦ ´©¸£½Ã¿À....";
+		cerr << "ì—”í„°ë¥¼ ëˆ„ë¥´ì‹œì˜¤....";
 		getchar();
 		for (int i = 0; i < maxwalk; i++) {
 			for (int k = 0; k < nMon; k++)
