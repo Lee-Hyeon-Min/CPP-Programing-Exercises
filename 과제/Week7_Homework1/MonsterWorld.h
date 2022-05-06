@@ -23,7 +23,7 @@ class MonsterWorld {
 		canvas.clear();
 		for (int y = 0; y < yMax; y++)
 			for (int x = 0; x < xMax; x++)
-				if (Map(y, x) > 0) canvas.draw(x, y, " ");
+				if (Map(y, x) > 0) canvas.draw(x, y, "■");
 		for (int i = 0; i < nMon; i++)
 			mon[i].draw(canvas);
 		canvas.print("[Monster World : Basic]");
