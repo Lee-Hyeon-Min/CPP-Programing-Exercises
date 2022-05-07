@@ -4,7 +4,7 @@
 #include <windows.h>
 #include <conio.h>
 #define DIM 40
-#define MAXMONS 20
+#define MAXMONS 5
 
 class MonsterWorld {
 	int map[DIM][DIM];
@@ -24,13 +24,13 @@ class MonsterWorld {
 		canvas.clear();
 		for (int y = 0; y < yMax; y++)
 			for (int x = 0; x < xMax; x++)
-				if (Map(y, x) > 0) canvas.draw(x, y, "¡á");
+				if (Map(y, x) > 0) canvas.draw(x, y, "â– ");
 		for (int i = 0; i < nMon; i++)
 			mon[i].draw(canvas);
 		canvas.print("[Monster World : Basic]");
 
-		cerr << "ÀüÃ¼ ÀÌµ¿ È½¼ö: " << nMove << endl;
-		cerr << "³²Àº ¾ÆÀÌÅÛ ¼ö: " << countItems() << endl;
+		cerr << "ì „ì²´ ì´ë™ íšŸìˆ˜: " << nMove << endl;
+		cerr << "ë‚¨ì€ ì•„ì´í…œ ìˆ˜: " << countItems() << endl;
 		for (int i = 0; i < nMon; i++)
 			mon[i].print();
 	}
@@ -47,7 +47,7 @@ public:
 	}
 	void play(int maxwalk, int wait) {
 		print();
-		cerr << "¿£ÅÍ¸¦ ´©¸£½Ã¿À....";
+		cerr << "ì—”í„°ë¥¼ ëˆ„ë¥´ì‹œì˜¤....";
 		getchar();
 		for (int i = 0; i < maxwalk; i++) {
 			for (int k = 0; k < nMon; k++)
