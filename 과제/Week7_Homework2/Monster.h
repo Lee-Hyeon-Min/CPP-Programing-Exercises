@@ -16,13 +16,13 @@ class Monster {
 			map[y][x] = 0;
 			nItem++;
 			nEnergy += 8;
-			if(map[y][x]!=1)
+			else
 				nEnergy -= 1;
 		}
 	}
 public:
-	Monster(string n = "³ª¶õ±«¹°", string i = "¡Ø", int px = 0, int py = 0, int nEnergy = 100) :name(n), icon(i), x(px), y(py), nItem(0), nEnergy(100) {}
-	~Monster() { cout << "\t\n" << name << icon << "¹°·¯°©´Ï´Ù"; }
+	Monster(string n = "Â³ÂªÂ¶ÃµÂ±Â«Â¹Â°", string i = "Â¡Ã˜", int px = 0, int py = 0, int nEnergy = 100) :name(n), icon(i), x(px), y(py), nItem(0), nEnergy(100) {}
+	~Monster() { cout << "\t\n" << name << icon << "Â¹Â°Â·Â¯Â°Â©Â´ÃÂ´Ã™"; }
 
 	void draw(Canvas& canvas) { canvas.draw(x, y, icon); }
 	void move(int map[DIM][DIM], int maxx, int maxy) {
