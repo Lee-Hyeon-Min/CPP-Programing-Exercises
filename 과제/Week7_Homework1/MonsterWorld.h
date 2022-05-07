@@ -2,8 +2,9 @@
 #include "Canvas.h"
 #include "Monster.h"
 #include <windows.h>
+#include <conio.h>
 #define DIM 40
-#define MAXMONS 20
+#define MAXMONS 5
 
 class MonsterWorld {
 	int map[DIM][DIM];
@@ -40,8 +41,8 @@ public:
 		for (int y = 0; y < yMax; y++)
 			for (int x = 0; x < xMax; x++)Map(x, y) = 1;
 	}
-	~MonsterWorld(){}
-	void add(Monster& m) {
+	~MonsterWorld() {}
+	void add(const Monster& m) {
 		if (nMon < MAXMONS) mon[nMon++] = m;
 	}
 	void play(int maxwalk, int wait) {
