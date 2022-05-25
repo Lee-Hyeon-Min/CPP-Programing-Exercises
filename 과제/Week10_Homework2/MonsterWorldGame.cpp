@@ -9,14 +9,14 @@ void main()
 	int w = 16, h = 8;
 	MonsterWorld game(w, h);
 
-	game.add(new Zombie("ÇãÁ¢ÇÑÁ»ºñ", "¡İ", rand() % w, rand() % h));
-	game.add(new Vampire("¹ìÆÄÀÌ¾îÂ¯", "¡Ú", rand() % w, rand() % h));
-	game.add(new KGhost("¾îÂ¼´Ù±Í½Å", "¢¾", rand() % w, rand() % h));
-	game.add(new Jiangshi("¸ø¸Ô¾îµµ°í", "¡ê", rand() % w, rand() % h, true));
-	game.add(new Jiangshi("¸ø¸Ô¾î¼¼·Î", "¢Õ", rand() % w, rand() % h, false));
-
+	game.add(new Zombie("í—ˆì ‘í•œì¢€ë¹„", "â—", rand() % w, rand() % h));
+	game.add(new Vampire("ë±€íŒŒì´ì–´ì§±", "â˜…", rand() % w, rand() % h));
+	game.add(new KGhost("ì–´ì©Œë‹¤ê·€ì‹ ", "â™¥", rand() % w, rand() % h));
+	game.add(new Jiangshi("ëª»ë¨¹ì–´ë„ê³ ", "â†”", rand() % w, rand() % h, true));
+	game.add(new Jiangshi("ëª»ë¨¹ì–´ì„¸ë¡œ", "â†•", rand() % w, rand() % h, false));
+	game.add(new Human("ì¸ê°„ì¶©", "ï¼ ", rand() % w, rand() % h));
 	game.play(500, 10);
-	printf("------°ÔÀÓ Á¾·á-------------------\n");
+	printf("------ê²Œì„ ì¢…ë£Œ-------------------\n");
 	getchar();
 	getchar();
 }
